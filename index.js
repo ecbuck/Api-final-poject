@@ -9,7 +9,7 @@ const DAL = require('./dataAccessLayer');
 
 DAL.Connect();
 
-const port = 3000;
+const port = process.env.PORT ;
 const app = express();
 dotenv.config();
 app.use(bodyParser.json());
